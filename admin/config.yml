@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: SƏNİN_GITHUB_ISTIFADƏÇI_ADIN/REPOZITORIYA_ADIN # Bura öz GitHub adını və layihənin adını yaz
+  branch: main # Əgər master-dirsə, master yaz
+
+media_folder: "images/uploads" # Yüklənən şəkillərin gedəcəyi qovluq
+public_folder: "/images/uploads"
+
+collections:
+  - name: "pages"
+    label: "Səhifələr"
+    files:
+      - file: "index.html" # Hansı faylı redaktə edəcəyik
+        label: "Ana Səhifə"
+        name: "index"
+        fields:
+          - { label: "Saytın Başlığı", name: "title", widget: "string" }
+          - { label: "Əsas Şəkil", name: "main_image", widget: "image" }
+          - { label: "Haqqımızda Mətni", name: "about_text", widget: "text" }
